@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body{
+    background-image: url("https://wallpapershome.com/images/pages/pic_hs/588.jpg");
+    background-size:100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.container{
+	text-align: center;
+}
+
+.center-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* código abaixo não relevante, só para o estilo! */
+    color: #fff;
+    background:#000;
+    padding: 0 20px 10px 20px;
+}
+
+
+h2{
+	font-size: 30px;
+	font-family: courier; 
+    text-align: center;
+}
+
+p{
+	font-size: 16px;
+    font-family: courier;
+    text-align: justify;
+
+}
+
+div.justified{
+	display: flex;
+    justify-content: center;
+
+}
+
+body{
+    background-color: #F8F8FF /*GhostWhite*/;
+}
+
+.button {
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.button1 {
+	font-size: 10px;
+	background-color: #FFFAFA; 
+    color: black; 
+    border: 2px solid #1E90FF;
+    margin-right: center;
+	margin-left: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+<div class="w3-container w3-red">
+		<div class="container center-align">
+
+			<h2>Login</h2>
+           
+	<div class="justified">
+			
+	<form>
+    
+  
+        <br></br>
+  		
+        <label for="senha">USERNAME: </label>
+        <div class="container"> 
+  		<input type="name" id="username" name="username" placeholder="@Username">
+        </div> 
+    
+        <br> </br> 
+        
+        <label for="senha">PASSWORD: </label>
+        <div class="container"> 
+  		<input type="password" id="password" name="password" placeholder="**********">
+        </div> 
+    
+        <br> </br> 
+        
+        <input type="checkbox" onclick="myFunction()"> Mostrar Senha
+	</form>
+
+	<br></br>
+
+    </div>
+    
+    <br></br> 
+    
+    	<div class="container">
+    		<button class="button button1">ENTRAR</button>
+		</div> 
+
+        
+	</div>
+
+<script>
+
+	function myFunction() {
+    	var x = document.getElementById("password");
+    		if (x.type === "password") {
+        		x.type = "text";
+    		} else {
+        		x.type = "password";
+    	}
+}
+
+</script>
+
+</body>
+</html>
